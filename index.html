@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ToolHub - Online Hardware Store</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+  <!-- NAVIGATION BAR -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <img src="C:\Users\ASUS\Downloads\Web_Dev_04\images\AdobeStock_1434537520_Preview.jpeg" alt="Logo" class="logo">
+      <div class="title">ToolHub</div>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#deals">Deals</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- LANDING SECTION -->
+  <div id="home" class="landing">
+    <div class="login-form">
+      <!-- Left: Login fields -->
+      <div class="form-left">
+        <h2>WELCOME TO TOOLHUB</h2>
+        <form>
+          <input type="text" placeholder="Username" required>
+          <input type="password" placeholder="Password" required>
+          <div class="form-options">
+            <label><input type="checkbox"> Remember</label>
+            <a href="#">Forgot Password?</a>
+          </div>
+          <button type="submit">Sign In</button>
+          <p>Don't have an account? <a href="#">Register</a></p>
+        </form>
+      </div>
+      <!-- Right: Illustration -->
+      <div class="form-right">
+        <img src="C:\Users\ASUS\Downloads\Web_Dev_04\images\AdobeStock_865875051_Preview.jpeg" alt="Login Illustration">
+      </div>
+    </div>
+  </div>
+
+  <!-- PRODUCTS SECTION -->
+  <section id="products" class="content">
+    <h2>Our Products</h2>
+    <p>Browse our wide selection of tools, equipment, and building materials.</p>
+    <div class="menu-items">
+      <div class="menu-item">
+        <h3>Power Drill</h3>
+        <p>High-performance cordless drill for all your DIY and professional needs.</p>
+      </div>
+      <div class="menu-item">
+        <h3>Hammer Set</h3>
+        <p>Durable steel hammers for home repairs and heavy-duty construction.</p>
+      </div>
+      <div class="menu-item">
+        <h3>Wrench Kit</h3>
+        <p>Adjustable wrench set made with rust-resistant stainless steel.</p>
+      </div>
+      <div class="menu-item">
+        <h3>Safety Gear</h3>
+        <p>Protective helmets, gloves, and goggles to ensure your safety.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEALS SECTION -->
+  <section id="deals" class="content">
+    <h2>Deals & Discounts</h2>
+    <p>Get the best deals on top-quality hardware products.</p>
+    <div class="offers-list">
+      <div class="offer">
+        <h3>Flat 25% Off on Power Tools</h3>
+        <p>Upgrade your toolkit with premium power tools at discounted rates.</p>
+      </div>
+      <div class="offer">
+        <h3>Buy 1 Get 1 Free - Hand Tools</h3>
+        <p>Perfect for professionals and DIY enthusiasts.</p>
+      </div>
+      <div class="offer">
+        <h3>Free Safety Gear</h3>
+        <p>Get free safety gloves with orders above ₹2000.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="content">
+    <h2>Contact Us</h2>
+    <p>Need help? Reach out to our customer support team.</p>
+    <div class="contact-info">
+      <p><strong>Email:</strong> support@toolhub.com</p>
+      <p><strong>Phone:</strong> +91 98765 43210</p>
+      <p><strong>Address:</strong> 45 Industrial Road, Pune, India</p>
+    </div>
+    <form class="contact-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+</body>
+
+<script>
+// Smooth scroll for nav links
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', function(e) {
+    const href = this.getAttribute('href');
+    if (href.startsWith('#')) {
+      e.preventDefault();
+      const target = document.querySelector(href);
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  });
+});
+</script>
+</html>

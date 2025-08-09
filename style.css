@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+}
+
+body {
+  background-image: url('images/AdobeStock_865875051_Preview.jpeg'); 
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* === NAVIGATION BAR === */
+.navbar {
+  width: 100%;
+  background-color: #222;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+}
+
+.title {
+  color: #97bbcb;
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  color: #08333b;
+}
+
+/* === LANDING SECTION === */
+.landing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 64px);
+  padding: 40px 20px;
+}
+
+.login-form {
+  background-color: white;
+  display: flex;
+  width: 800px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0px 12px 30px rgba(0,0,0,0.25);
+}
+
+/* Left form section */
+.form-left {
+  flex: 1;
+  padding: 40px;
+}
+
+.form-left h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.form-left input[type="text"],
+.form-left input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  margin: 10px 0 20px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background-color: #346583;
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #346583;
+}
+
+/* Right image section */
+.form-right {
+  flex: 1;
+  background: #fafafa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-right img {
+  width: 90%;
+  max-width: 350px;
+}
+
+/* Content sections */
+.content {
+  min-height: 100vh;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#products.content {
+  background: linear-gradient(135deg, #346583 0%, #346583 100%);
+}
+#deals.content {
+  background: linear-gradient(135deg, #555 0%, #222 100%);
+  color: #fff;
+}
+#contact.content {
+  background: linear-gradient(135deg, #346583 0%, #346583 100%);
+  color: #000;
+}
+
+.menu-items, .offers-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.menu-item, .offer {
+  background: #fff8e1;
+  border-radius: 12px;
+  padding: 24px 32px;
+  min-width: 220px;
+  max-width: 260px;
+  text-align: left;
+}
+
+.offer {
+  background: rgba(255,255,255,0.15);
+  color: white;
+}
+
+/* Contact form */
+.contact-form {
+  background: rgba(255,255,255,0.8);
+  border-radius: 12px;
+  padding: 32px 40px;
+  margin-top: 30px;
+  display: inline-block;
+  text-align: left;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+.contact-form button {
+  background: #222;
+  color: #291b60;
+}
